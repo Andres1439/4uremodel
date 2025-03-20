@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import Link from "next/link";
 // Componente reutilizable para íconos SVG
 const LocationIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6" aria-hidden="true">
@@ -52,6 +52,16 @@ export default function Contact() {
                 <a href="mailto:prybar@perfectoremodel.com" className="hover:text-blue-600 transition-colors">
                   prybar@perfectoremodel.com
                 </a>
+              </li>
+              <li className="flex items-center">
+                <Link
+                  href="https://wa.me/+15163870059?text=Hello,%20I%20want%20to%20contact%20you%20about%20your%20services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black hover:text-blue-800 transition-colors"
+                >
+                  Contact in Whatsapp
+                </Link>
               </li>
             </ul>
           </address>

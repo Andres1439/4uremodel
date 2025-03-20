@@ -23,7 +23,7 @@ export function Navbar() {
           <section className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-2">
               <Image src="/home_logob.png" alt="Logo" width={40} height={40} className="rounded-md" />
-              <span className="font-bold text-xl hidden sm:inline-block">4Uremodel</span>
+              <span className="font-bold text-xl hidden sm:inline-block">PerfectoRemodel</span>
             </Link>
           </section>
 

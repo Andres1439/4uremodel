@@ -9,9 +9,9 @@ import { Footer } from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "4Uremodel | Your Trusted Partner in Construction and Remodeling",
+  title: "PerfectoRemodel | Your Trusted Partner in Construction and Remodeling",
   description:
-    "Explore 4Uremodel's interactive model house and discover our expert services in construction, remodeling, carpentry, and more. Get a quote today!",
+    "Explore PerfectoRemodel's interactive model house and discover our expert services in construction, remodeling, carpentry, and more. Get a quote today!",
 };
 
 export default function RootLayout({

@@ -138,6 +138,9 @@ export default function InteractiveHouse() {
     <section className="flex flex-col items-center justify-center w-full py-8 px-4">
       <header>
         <h1 className="text-5xl font-bold mb-6 text-center">Explore Our Model House</h1>
+        <a href="tel:5162380038" className="text-blue-600 hover:underline font-medium text-center text-2xl">
+          <p className="pb-4">(516) 238-0038</p>
+        </a>{" "}
         <p className="text-muted-foreground mb-8 text-center max-w-2xl">
           {isMobile
             ? "Select an area of the house to get more information."

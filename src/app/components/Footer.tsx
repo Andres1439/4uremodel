@@ -41,7 +41,7 @@ export const Footer = () => {
             <figure className="relative w-12 h-12">
               <Image src="/home_logo.png" alt="Building Materials" width={50} height={50} className="object-contain" />
             </figure>
-            <span className="text-2xl font-semibold">4Uremodel</span>
+            <span className="text-2xl font-semibold">PerfectoRemodel</span>
           </Link>
         </header>
 
@@ -83,7 +83,7 @@ export const Footer = () => {
 
         {/* Copyright */}
         <footer className="mt-8 pt-8 border-t border-gray-700 text-center">
-          <p className="text-sm text-gray-400">© {new Date().getFullYear()} 4Uremodel. All rights reserved.</p>
+          <p className="text-sm text-gray-400">© {new Date().getFullYear()} PerfectoRemodel. All rights reserved.</p>
         </footer>
       </section>
     </footer>

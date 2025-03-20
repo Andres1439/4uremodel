@@ -175,7 +175,7 @@ export function PricingCards() {
       </main>
 
       <footer className="text-center mt-12 text-sm text-muted-foreground">
-        <p>Prices are subject to change. Contact us for more details.</p>
+        <p>If all this price is not suitable for you, we can negotiate. just talk to me, this price is negotiable... there are certain discounts.</p>
       </footer>
     </section>
   );
