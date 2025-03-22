@@ -131,6 +131,19 @@ export default function Contact() {
             </label>
 
             <label className="block space-y-2">
+              <span className="block text-sm font-medium">Phone Number</span>
+              <input
+                type="tel"
+                name="phone"
+                required
+                pattern="[0-9]+"
+                title="Please enter only numbers."
+                className="w-full px-4 py-2 rounded-md border focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-100"
+                placeholder="Your phone number"
+              />
+            </label>
+
+            <label className="block space-y-2">
               <span className="block text-sm font-medium">Message</span>
               <textarea
                 name="message"
