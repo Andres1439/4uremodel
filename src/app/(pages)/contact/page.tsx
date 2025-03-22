@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+
 // Componente reutilizable para íconos SVG
 const LocationIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 mr-2 sm:mr-6" aria-hidden="true">
@@ -21,13 +22,36 @@ const EmailIcon = () => (
 );
 
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const form = e.currentTarget as HTMLFormElement;
-    const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault(); // Evita el envío normal del formulario
 
-    // Abre el cliente de correo con el cuerpo personalizado
-    window.location.href = `mailto:prybar@perfectoremodel.com?subject=Consulta de PerfectoRemodel&body=${encodeURIComponent(message)}`;
+    const form = e.currentTarget as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        alert("Thank you for your message!"); // Mensaje de éxito
+        form.reset(); // Limpia el formulario
+      } else {
+        const data = await response.json();
+        if (data.errors) {
+          alert(data.errors.map((error: { message: string }) => error.message).join(", "));
+        } else {
+          alert("Oops! There was a problem submitting your form.");
+        }
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error); // Muestra el error en la consola
+      alert("Oops! There was a problem submitting your form.");
+    }
   };
 
   return (
@@ -77,7 +101,12 @@ export default function Contact() {
         </aside>
 
         {/* Formulario */}
-        <form onSubmit={handleSubmit} className="flex flex-col py-6 space-y-6 md:py-6 md:px-6 bg-black text-white rounded-2xl">
+        <form
+          onSubmit={handleSubmit}
+          action="https://formspree.io/f/xkgjrorn"
+          method="POST"
+          className="flex flex-col py-6 space-y-6 md:py-6 md:px-6 bg-black text-white rounded-2xl"
+        >
           <fieldset className="space-y-6">
             <legend className="sr-only">Contact Information</legend>
 
