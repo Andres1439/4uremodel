@@ -32,6 +32,8 @@ export function Navbar() {
             <NavLink href="/">Home</NavLink>
             <NavLink href="/suscribe">Suscribe</NavLink>
             <NavLink href="/services">Services</NavLink>
+            <NavLink href="/diferent">A Diferent Way</NavLink>
+            <NavLink href="/join">Join</NavLink>
             <NavLink href="/faq">FAQ</NavLink>
             <Button asChild variant="default" size="sm">
               <Link href="/contact">Contact</Link>
@@ -69,6 +71,16 @@ export function Navbar() {
                 FAQ
               </MobileNavLink>
             </li>
+            <li>
+              <MobileNavLink href="/diferent" onClick={toggleMenu}>
+                A Diferent Way
+              </MobileNavLink>
+            </li>
+            <li>
+              <MobileNavLink href="/join" onClick={toggleMenu}>
+                Join
+              </MobileNavLink>
+            </li>{" "}
             <li>
               <MobileNavLink href="/contact" onClick={toggleMenu}>
                 Contact
