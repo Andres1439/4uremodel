@@ -7,8 +7,10 @@ export const Footer = () => {
   // Array de enlaces principales
   const mainLinks = [
     { name: "Home", href: "/" },
-    { name: "Suscribe", href: "/suscribe" },
+    { name: "Subscribe", href: "/subscribe" },
     { name: "Services", href: "/services" },
+    { name: "How It Works", href: "/how-it-works" },
+    { name: "Join", href: "/join" },
     { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
   ];

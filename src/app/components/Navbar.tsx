@@ -30,9 +30,9 @@ export function Navbar() {
           {/* Menú de navegación para pantallas grandes */}
           <nav className="hidden md:flex items-center space-x-6">
             <NavLink href="/">Home</NavLink>
-            <NavLink href="/suscribe">Suscribe</NavLink>
+            <NavLink href="/subscribe">Subscribe</NavLink>
             <NavLink href="/services">Services</NavLink>
-            <NavLink href="/diferent">A Diferent Way</NavLink>
+            <NavLink href="/how-it-works">How It Works</NavLink>
             <NavLink href="/join">Join</NavLink>
             <NavLink href="/faq">FAQ</NavLink>
             <Button asChild variant="default" size="sm">
@@ -57,8 +57,8 @@ export function Navbar() {
               </MobileNavLink>
             </li>
             <li>
-              <MobileNavLink href="/suscribe" onClick={toggleMenu}>
-                Suscribe
+              <MobileNavLink href="/subscribe" onClick={toggleMenu}>
+                Subscribe
               </MobileNavLink>
             </li>
             <li>
@@ -72,8 +72,8 @@ export function Navbar() {
               </MobileNavLink>
             </li>
             <li>
-              <MobileNavLink href="/diferent" onClick={toggleMenu}>
-                A Diferent Way
+              <MobileNavLink href="/how-it-works" onClick={toggleMenu}>
+                How It Works
               </MobileNavLink>
             </li>
             <li>

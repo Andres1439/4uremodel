@@ -135,9 +135,7 @@ export function PricingCards() {
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <Check className="h-4 w-4 mr-2 mt-1 text-primary" />
-                  <span>
-                    {plan.baseHours} hours of service per year. Paid plan includes {plan.includedAdditionalHours} additional hours.
-                  </span>
+                  <span>{plan.baseHours} hours of service per year.</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-4 w-4 mr-2 mt-1 text-primary" />
@@ -149,6 +147,9 @@ export function PricingCards() {
                 </li>
                 <li className="flex items-start text-xs text-muted-foreground">
                   <span className="ml-6">***Prices reflect the current promotion and are subject to change without notice***</span>
+                </li>
+                <li className="flex items-start text-xs text-muted-foreground">
+                  <span> This package is suitable for your house or as a gift to your love ones.</span>
                 </li>
               </ul>
 

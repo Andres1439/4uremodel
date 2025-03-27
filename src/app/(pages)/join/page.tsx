@@ -203,9 +203,11 @@ export default function JoinTeam() {
       } else {
         throw new Error("Submission failed");
       }
-    } catch (error) {
+    } catch (error: unknown) {
+      console.error("Submission error:", error);
+      const errorMessage = error instanceof Error ? error.message : "Unknown error occurred";
       toast.error("Submission Error", {
-        description: "There was a problem submitting your application. Please try again later.",
+        description: `There was a problem submitting your application: ${errorMessage}`,
       });
     } finally {
       setIsSubmitting(false);
