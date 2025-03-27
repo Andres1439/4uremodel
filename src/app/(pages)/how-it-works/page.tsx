@@ -5,7 +5,7 @@ export default function HowItWorks() {
   return (
     <main className="container mx-auto py-12 px-4 md:px-6 bg-white text-gray-800">
       <header>
-        <h1 className="text-4xl font-bold text-center mb-12 text-blue-600">How It Works</h1>
+        <h1 className="text-4xl font-bold text-center mb-8">How It Works</h1>
       </header>
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
@@ -16,7 +16,7 @@ export default function HowItWorks() {
         </figure>
 
         <article className="flex flex-col justify-center">
-          <h2 className="text-3xl font-semibold mb-6 text-blue-700">A Better Approach to Home Improvement</h2>
+          <h2 className="text-3xl font-semibold mb-8">A Better Approach to Home Improvement</h2>
           <p className="text-lg mb-4">
             PerfectoRemodel is a home improvement subscription service that offers a much easier way to maintain your home.
           </p>
@@ -34,7 +34,7 @@ export default function HowItWorks() {
 
       <Card className="mb-16 bg-blue-50">
         <CardContent className="p-8">
-          <h2 className="text-3xl font-semibold mb-6 text-center text-blue-700">Doing It Right Every Time</h2>
+          <h2 className="text-3xl font-semibold text-center mb-8">Doing It Right Every Time</h2>
           <p className="text-lg mb-4">
             While you are at your house, your repair, remodel, or construction will be done. With PerfectoRemodel Corp., you get the satisfaction of
             knowing your job will be completed in a timely manner.
@@ -51,7 +51,7 @@ export default function HowItWorks() {
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
         <article className="flex flex-col justify-center order-2 md:order-1">
-          <h2 className="text-3xl font-semibold mb-6 text-blue-700">Five-Star Professionalism</h2>
+          <h2 className="text-3xl font-semibold  mb-8">Five-Star Professionalism</h2>
           <section className="mb-6">
             <h3 className="text-xl font-medium mb-2">Licensed and Insured</h3>
             <ul className="list-disc pl-5 space-y-1">

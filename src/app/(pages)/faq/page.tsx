@@ -41,7 +41,7 @@ const FAQ = () => {
   return (
     <section className="max-w-4xl mx-auto px-4 py-8 mb-20">
       <header>
-        <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
       </header>
       <main className="space-y-4">
         {faqItems.map((item, index) => (

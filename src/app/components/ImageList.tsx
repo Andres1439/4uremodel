@@ -163,7 +163,7 @@ export const ImageList = () => {
   return (
     <section className="@container mx-auto px-4 max-w-7xl mb-5">
       <header className="text-center">
-        <h1 className="font-bold text-4xl pb-8">OUR PROJECTS</h1>
+        <h1 className="text-4xl font-bold text-center mb-8">Our projects</h1>
       </header>
 
       <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">

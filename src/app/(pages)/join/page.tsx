@@ -217,12 +217,12 @@ export default function JoinTeam() {
   return (
     <main className="container mx-auto py-12 px-4 md:px-6 bg-white">
       <header>
-        <h1 className="text-4xl font-bold text-center mb-12 text-blue-600">Join Our Team</h1>
+        <h1 className="text-4xl font-bold text-center mb-8">Join Our Team</h1>
       </header>
 
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 items-center">
         <article className="flex flex-col justify-center">
-          <h2 className="text-3xl font-semibold mb-6 text-blue-700">Work on Your Terms</h2>
+          <h2 className="text-3xl font-semibold text-center mb-8">Work on Your Terms</h2>
           <p className="text-lg mb-4">Work as much as you like. Get the additional income you want. At your preferred time.</p>
           <p className="text-lg mb-4">
             Carpenters, painters, drywall, mason, handyman, landscapers, remodelers, everything and more; we&apos;re looking to hire all of you. Your
@@ -246,7 +246,7 @@ export default function JoinTeam() {
 
       <Card className="mb-16 bg-gray-50">
         <CardContent className="p-8">
-          <h2 className="text-3xl font-semibold mb-8 text-center text-blue-700">Application Form</h2>
+          <h2 className="text-3xl font-semibold text-center mb-8">Application Form</h2>
 
           <form onSubmit={handleSubmit} className="space-y-8">
             <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
